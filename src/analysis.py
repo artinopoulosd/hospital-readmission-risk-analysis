@@ -22,3 +22,11 @@ print(df.head())
 # Basic information
 print("\nDataset information:")
 print(df.info())
+
+# Save summary to a text file
+with open("outputs/summary.txt", "w") as file:
+    file.write("Hospital Readmission Dataset Summary\n")
+    file.write("=" * 40 + "\n\n")
+
+    file.write(f"Rows: {df.shape[0]}\n")
+    file.write(f"Columns: {df.shape[1]}\n")

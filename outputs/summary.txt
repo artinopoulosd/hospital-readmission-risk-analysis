@@ -1,0 +1,5 @@
+Hospital Readmission Dataset Summary
+========================================
+
+Rows: 101766
+Columns: 50
