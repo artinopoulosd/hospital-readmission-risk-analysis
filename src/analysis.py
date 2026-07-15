@@ -30,3 +30,12 @@ with open("outputs/summary.txt", "w") as file:
 
     file.write(f"Rows: {df.shape[0]}\n")
     file.write(f"Columns: {df.shape[1]}\n")
+
+    # Missing values analysis
+missing_values = df.isnull().sum()
+
+print("\nMissing Values")
+print("=" * 40)
+print(missing_values)
+
+missing_values.to_csv("outputs/missing_values.csv")
